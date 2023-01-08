@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\MyFirstWebApplication",
+    "\\MyFirstWebApplication\\MyFirstWebApplication",
+    "\\MyFirstWebApplication\\MyFirstWebApplication\\Controllers",
+    "\\MyFirstWebApplication\\MyFirstWebApplication\\Models"
+  ],
+  "SelectedNode": "\\MyFirstWebApplication\\MyFirstWebApplication\\Models\\WeatherForecastModel.cs",
+  "PreviewInSolutionExplorer": false
+}
