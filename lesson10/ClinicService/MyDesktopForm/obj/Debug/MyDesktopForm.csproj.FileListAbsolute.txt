@@ -1,0 +1,14 @@
+B:\IT\GB\Architecture\lesson10\ClinicService\MyDesktopForm\bin\Debug\MyDesktopForm.exe.config
+B:\IT\GB\Architecture\lesson10\ClinicService\MyDesktopForm\bin\Debug\MyDesktopForm.exe
+B:\IT\GB\Architecture\lesson10\ClinicService\MyDesktopForm\bin\Debug\MyDesktopForm.pdb
+B:\IT\GB\Architecture\lesson10\ClinicService\MyDesktopForm\obj\Debug\MyDesktopForm.csproj.AssemblyReference.cache
+B:\IT\GB\Architecture\lesson10\ClinicService\MyDesktopForm\obj\Debug\MyDesktopForm.csproj.SuggestedBindingRedirects.cache
+B:\IT\GB\Architecture\lesson10\ClinicService\MyDesktopForm\obj\Debug\MyDesktopForm.Properties.Resources.resources
+B:\IT\GB\Architecture\lesson10\ClinicService\MyDesktopForm\obj\Debug\MyDesktopForm.csproj.GenerateResource.cache
+B:\IT\GB\Architecture\lesson10\ClinicService\MyDesktopForm\obj\Debug\MyDesktopForm.csproj.CoreCompileInputs.cache
+B:\IT\GB\Architecture\lesson10\ClinicService\MyDesktopForm\obj\Debug\MyDesktopForm.exe
+B:\IT\GB\Architecture\lesson10\ClinicService\MyDesktopForm\obj\Debug\MyDesktopForm.pdb
+B:\IT\GB\Architecture\lesson10\ClinicService\MyDesktopForm\bin\Debug\Newtonsoft.Json.dll
+B:\IT\GB\Architecture\lesson10\ClinicService\MyDesktopForm\bin\Debug\Newtonsoft.Json.xml
+B:\IT\GB\Architecture\lesson10\ClinicService\MyDesktopForm\obj\Debug\MyDesktopForm.csproj.CopyComplete
+B:\IT\GB\Architecture\lesson10\ClinicService\MyDesktopForm\obj\Debug\MyDesktopForm.MainForm.resources

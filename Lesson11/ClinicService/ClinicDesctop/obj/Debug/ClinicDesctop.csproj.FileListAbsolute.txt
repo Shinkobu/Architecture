@@ -12,3 +12,17 @@ C:\sources\gb\SoftwareArch\group2\lesson11\ClinicService\ClinicDesctop\obj\Debug
 C:\sources\gb\SoftwareArch\group2\lesson11\ClinicService\ClinicDesctop\bin\Debug\Newtonsoft.Json.dll
 C:\sources\gb\SoftwareArch\group2\lesson11\ClinicService\ClinicDesctop\bin\Debug\Newtonsoft.Json.xml
 C:\sources\gb\SoftwareArch\group2\lesson11\ClinicService\ClinicDesctop\obj\Debug\ClinicDesctop.csproj.CopyComplete
+B:\IT\GB\Architecture\Lesson11\ClinicService\ClinicDesctop\bin\Debug\ClinicDesctop.exe.config
+B:\IT\GB\Architecture\Lesson11\ClinicService\ClinicDesctop\bin\Debug\ClinicDesctop.exe
+B:\IT\GB\Architecture\Lesson11\ClinicService\ClinicDesctop\bin\Debug\ClinicDesctop.pdb
+B:\IT\GB\Architecture\Lesson11\ClinicService\ClinicDesctop\bin\Debug\Newtonsoft.Json.dll
+B:\IT\GB\Architecture\Lesson11\ClinicService\ClinicDesctop\bin\Debug\Newtonsoft.Json.xml
+B:\IT\GB\Architecture\Lesson11\ClinicService\ClinicDesctop\obj\Debug\ClinicDesctop.csproj.AssemblyReference.cache
+B:\IT\GB\Architecture\Lesson11\ClinicService\ClinicDesctop\obj\Debug\ClinicDesctop.csproj.SuggestedBindingRedirects.cache
+B:\IT\GB\Architecture\Lesson11\ClinicService\ClinicDesctop\obj\Debug\ClinicDesctop.MainForm.resources
+B:\IT\GB\Architecture\Lesson11\ClinicService\ClinicDesctop\obj\Debug\ClinicDesctop.Properties.Resources.resources
+B:\IT\GB\Architecture\Lesson11\ClinicService\ClinicDesctop\obj\Debug\ClinicDesctop.csproj.GenerateResource.cache
+B:\IT\GB\Architecture\Lesson11\ClinicService\ClinicDesctop\obj\Debug\ClinicDesctop.csproj.CoreCompileInputs.cache
+B:\IT\GB\Architecture\Lesson11\ClinicService\ClinicDesctop\obj\Debug\ClinicDesctop.csproj.CopyComplete
+B:\IT\GB\Architecture\Lesson11\ClinicService\ClinicDesctop\obj\Debug\ClinicDesctop.exe
+B:\IT\GB\Architecture\Lesson11\ClinicService\ClinicDesctop\obj\Debug\ClinicDesctop.pdb
