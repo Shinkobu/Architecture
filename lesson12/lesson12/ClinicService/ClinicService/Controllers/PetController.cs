@@ -30,7 +30,11 @@ namespace ClinicService.Controllers
         [SwaggerOperation(OperationId = "PetUpdate")]
         public ActionResult<int> Update([FromBody] UpdatePetRequest updatePetRequest)
         {
-            return Ok(1);
+            if (updatePetRequest.Birthday < DateTime.Now.AddYears(-25) || updatePetRequest.Name.Length < 3)
+            {
+                return BadRequest(0); // BadRequestObjectResult : 400
+            }
+            return Ok(1); // OkObjectResult : 200
         }
 
         [HttpDelete("delete")]
@@ -48,14 +52,24 @@ namespace ClinicService.Controllers
         [SwaggerOperation(OperationId = "PetGetAll")]
         public ActionResult<List<Pet>> GetAll(int clientId)
         {
-            return Ok(new List<Pet>());
+
+            if (clientId <= 0)
+            {
+                return BadRequest(0);
+            }
+            return Ok(1);
+
         }
 
         [HttpGet("get-by-id")]
         [SwaggerOperation(OperationId = "GetById")]
         public ActionResult<Client> GetById(int id)
         {
-            return Ok(new Pet());
+            if (id <= 0)
+            {
+                return BadRequest(0);
+            }
+            return Ok(1);
         }
     }
 }

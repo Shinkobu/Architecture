@@ -1,4 +1,5 @@
 ﻿using ClinicService.Controllers;
+using ClinicService.Models;
 using ClinicService.Models.Requests;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -11,8 +12,8 @@ namespace ClinicServiceTests
 {
     /// <summary>
     /// ДОМАШНЯЯ РАБОТА: разработать методы тестирования контроллера PetController:
-    /// Обновление данных UpdateTest
-    /// Получение данных (по всем животным) GetAllTest
+    /// Обновление данных UpdateTest - done
+    /// Получение данных (по всем животным) GetAllTest - done
     /// Получение данных (по конкретному животному) GetByIdTest
     /// </summary>
     public class PetControllerTests
@@ -63,7 +64,7 @@ namespace ClinicServiceTests
 
             Assert.IsType<OkObjectResult>(operationResult.Result);
             Assert.Equal<int>(expectedOperationValue, (int)((OkObjectResult)operationResult.Result).Value);
-
+      
         }
 
         [Theory]
@@ -98,6 +99,129 @@ namespace ClinicServiceTests
 
             Assert.IsType<OkObjectResult>(operationResult.Result);
             Assert.Equal<int>(expectedOperationValue, (int)((OkObjectResult)operationResult.Result).Value);
+        }
+
+        [Fact]
+        public void PetUpdateBadRequestTest()
+        {
+
+            UpdatePetRequest updatePetRequest = new UpdatePetRequest();
+            updatePetRequest.Name = "П";
+            updatePetRequest.Birthday = DateTime.Now.AddYears(-55);
+            updatePetRequest.PetId = 1;
+
+            ActionResult<int> operationResult = _petController.Update(updatePetRequest);
+
+            int expectedOperationValue = 0;
+
+            Assert.IsType<BadRequestObjectResult>(operationResult.Result);
+            Assert.Equal<int>(expectedOperationValue, (int)((BadRequestObjectResult)operationResult.Result).Value);
+
+        }
+
+        [Fact]
+        public void PetUpdateTest()
+        {
+            // МЕТОД ТЕСТИРОВАНИЯ СОСТОИТ ИЗ УСЛОВНЫХ 3 ЧАСТЕЙ
+
+            // [1] Подготовка данных для тестирования
+            UpdatePetRequest updatePetRequest = new UpdatePetRequest();
+            updatePetRequest.Name = "Персик";
+            updatePetRequest.Birthday = DateTime.Now.AddYears(-15);
+            updatePetRequest.PetId = 1;
+
+            // [2] Исполнение тестируемого метода
+            ActionResult<int> operationResult = _petController.Update(updatePetRequest);
+
+
+            // [3] Подготовка эталонного результата (expected), проверка результата
+            int expectedOperationValue = 1;
+
+            Assert.IsType<OkObjectResult>(operationResult.Result);
+            Assert.Equal<int>(expectedOperationValue, (int)((OkObjectResult)operationResult.Result).Value);
+
+        }
+
+        [Fact]
+        public void GetAllBadRequestTest()
+        {
+            // МЕТОД ТЕСТИРОВАНИЯ СОСТОИТ ИЗ УСЛОВНЫХ 3 ЧАСТЕЙ
+
+            // [1] Подготовка данных для тестирования
+
+            int clientTestId = -1;
+
+            // [2] Исполнение тестируемого метода
+            ActionResult<List<Pet>> operationResult = _petController.GetAll(clientTestId);
+
+
+            // [3] Подготовка эталонного результата (expected), проверка результата
+            int expectedOperationValue = 0;
+
+            Assert.IsType<BadRequestObjectResult>(operationResult.Result);
+            Assert.Equal<int>(expectedOperationValue, (int)((BadRequestObjectResult)operationResult.Result).Value);
+
+        }
+
+        [Fact]
+        public void GetAllTest()
+        {
+            // МЕТОД ТЕСТИРОВАНИЯ СОСТОИТ ИЗ УСЛОВНЫХ 3 ЧАСТЕЙ
+
+            // [1] Подготовка данных для тестирования
+
+            int clientTestId = 1;
+
+            // [2] Исполнение тестируемого метода
+            ActionResult<List<Pet>> operationResult = _petController.GetAll(clientTestId);
+
+
+            // [3] Подготовка эталонного результата (expected), проверка результата
+            int expectedOperationValue = 1;
+
+            Assert.IsType<OkObjectResult>(operationResult.Result);
+            Assert.Equal<int>(expectedOperationValue, (int)((OkObjectResult)operationResult.Result).Value);
+
+        }
+        [Fact]
+        public void GetByIdBadRequestTest()
+        {
+            // МЕТОД ТЕСТИРОВАНИЯ СОСТОИТ ИЗ УСЛОВНЫХ 3 ЧАСТЕЙ
+
+            // [1] Подготовка данных для тестирования
+
+            int TestId = -1;
+
+            // [2] Исполнение тестируемого метода
+            ActionResult<Client> operationResult = _petController.GetById(TestId);
+
+
+            // [3] Подготовка эталонного результата (expected), проверка результата
+            int expectedOperationValue = 0;
+
+            Assert.IsType<BadRequestObjectResult>(operationResult.Result);
+            Assert.Equal<int>(expectedOperationValue, (int)((BadRequestObjectResult)operationResult.Result).Value);
+
+        }
+        [Fact]
+        public void GetByIdTest()
+        {
+            // МЕТОД ТЕСТИРОВАНИЯ СОСТОИТ ИЗ УСЛОВНЫХ 3 ЧАСТЕЙ
+
+            // [1] Подготовка данных для тестирования
+
+            int TestId = 1;
+
+            // [2] Исполнение тестируемого метода
+            ActionResult<Client> operationResult = _petController.GetById(TestId);
+
+
+            // [3] Подготовка эталонного результата (expected), проверка результата
+            int expectedOperationValue = 1;
+
+            Assert.IsType<OkObjectResult>(operationResult.Result);
+            Assert.Equal<int>(expectedOperationValue, (int)((OkObjectResult)operationResult.Result).Value);
+
         }
 
 
